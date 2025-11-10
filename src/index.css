@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2 {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 700;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  background: hsl(243, 96%, 9%);
+}
+
+button {
+  cursor: pointer;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.text-shadow {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.weather-bg {
+  background: url("./assets/images/bg-today-small.svg") no-repeat center/cover;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .weather-bg {
+    background: url("./assets/images/bg-today-large.svg") no-repeat center/cover;
+  }
+}
